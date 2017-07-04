@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar color="danger">
+        <ion-title>Localização</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+
+ <ion-card>
+    <img src="img/santuarioAtual.png"/>
+    <div class="card-title">Coração de Jesus</div>
+      <button ion-button icon-only outline (click)="goToSantuario()">
+            <ion-icon name="navigate"></ion-icon>
+      </button>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/coracaoMaria.png"/>
+    <div class="card-title">Coração de Maria</div>
+      <button ion-button icon-only outline (click)="goToMaria()">
+            <ion-icon name="navigate"></ion-icon>
+      </button>
+  </ion-card>
+
+  <ion-card>
+    <img src="img/fatima.png"/>
+    <div class="card-title">Nossa Senhora de Fátima</div>
+      <button ion-button icon-only outline (click)="goToFatima()">
+            <ion-icon name="navigate"></ion-icon>
+      </button>
+  </ion-card>
+
+</ion-content>

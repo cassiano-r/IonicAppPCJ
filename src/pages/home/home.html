@@ -1,0 +1,73 @@
+<ion-header>
+    <ion-navbar color="danger">
+        <button menuToggle ion-button icon-only>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Paróquia Coração de Jesus</ion-title>
+    </ion-navbar>
+    <ion-toolbar color="dark">
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+ <ion-card>
+  <img src="img/cpj.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      #PartiuPCJ
+      </ion-card-title>
+    <p style="text-align:justify" >
+        Convida você e seus amigos, para dias de alegria e diversão durante as férias de JULHO!! 
+        Onde?? No Centro de Evangelização da Paróquia Coração de Jesus!
+        Quando?? Se liga aí... <br>
+        <br>
+        05/07 – 19h - Recreação no Centro de Evangelização.<br>
+        <br>
+        06/07 – 19h - Cinema COM PIPOCA<br>
+        <br>
+        07/07 – 18h - Adoração e às 19h30 - Missa (Após a missa haverá esportes, lazer e música).<br>
+        <br>
+        08 e 09/07 – Campeonato de Futsal <br>
+        <br>
+        E nos Domingos 16, 23 e 30/07 – A partir das 15h no Centro de Evangelização<br>
+        <br>
+        Não vai perder hein?! Chama a galera e #PartiuPCJ <br>
+        <br>
+        Maiores informações pelo Whats: 12/98852-4034<br>
+        <br>
+    </p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="img/cinema.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Cinema
+      </ion-card-title>
+        <p style="text-align:justify" >        
+                A Juventude da PCJ, quer fazer
+                um cinema nas férias de julho.
+                Qual filme você gostaria de assistir?
+            <ion-input type="text" [(ngModel)]="newItem" placeholder="Digite aqui..." clearInput></ion-input>
+            <button ion-button (click)="addItem()">Add</button>
+        </p>
+                 
+  </ion-card-content>
+</ion-card>
+
+ <ion-fab bottom right >
+   <button ion-fab color="danger" auto-close-on-click-outside><ion-icon name="add"></ion-icon></button>
+   <ion-fab-list side="left">
+     <button ion-fab (click)="goToFacebook()"><ion-icon color="primary" name="logo-facebook"></ion-icon></button>
+     <button ion-fab (click)="goToYoutube()"><ion-icon color="danger" name="logo-youtube"></ion-icon></button>
+     <button ion-fab (click)="goToInstagram()"><ion-icon color="dark" name="logo-instagram"></ion-icon></button>
+   </ion-fab-list>
+ </ion-fab>
+
+</ion-content>
+
+
+ 
